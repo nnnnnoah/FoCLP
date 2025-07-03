@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&family=Open+Sans:wght@300;600&family=Lato:wght@300;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,6 +29,51 @@ header {
   display: flex;
   justify-content: center;
   background-position: center;
+}
+
+.nav-parent {
+  color: #fff;
+  transition: 0.2s;
+  text-transform: uppercase;
+  padding: 25px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.dropdown:hover .nav-parent,
+.nav-parent:hover {
+  color: #9cb696;
+}
+
+.dropdown-menu {
+  position: absolute;
+  text-align: left;
+  display: grid;
+  z-index: 10;
+  min-width: 3em;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.dropdown-menu a {
+  margin-bottom: 10px;
+  color: #121212;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+
+.dropdown-menu a:hover {
+  color: #398738;
 }
 
 a {
@@ -107,6 +153,6 @@ main {
   padding-bottom: 10px;
 }
 .logo:hover {
-  filter: drop-shadow(grey 0px 0px 0.5rem);
+  filter: drop-shadow(grey 0px 0px 0.3rem);
   transition: 0.3s;
 }
