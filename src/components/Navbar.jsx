@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Dropdown from "./Dropdown";
+import { Link } from "react-router-dom";
+import Dropdown from "./ui/Dropdown";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
@@ -40,9 +41,9 @@ function Navbar() {
 
       {/* Membership Link */}
       <div>
-        <a href="/membership" className="nav-parent">
+        <Link to="/membership" className="nav-parent">
           Membership
-        </a>
+        </Link>
       </div>
 
       {/* Other Info Dropdown */}

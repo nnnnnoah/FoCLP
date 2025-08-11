@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Dropdown({ title, link, openMenu, toggleMenu, items }) {
   const isOpen = openMenu === title;
@@ -9,15 +10,15 @@ function Dropdown({ title, link, openMenu, toggleMenu, items }) {
       onMouseEnter={() => toggleMenu(title)}
       onMouseLeave={() => toggleMenu(null)}
     >
-      <a className="nav-parent" href={link}>
+      <Link className="nav-parent" to={link}>
         {title}
-      </a>
+      </Link>
       {isOpen && (
         <div className="dropdown-menu">
           {items.map(({ link, label }) => (
-            <a key={label} href={link}>
+            <Link key={label} to={link}>
               {label}
-            </a>
+            </Link>
           ))}
         </div>
       )}

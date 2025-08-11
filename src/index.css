@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&family=Open+Sans:wght@300;600&family=Lato:wght@300;600&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -20,6 +18,9 @@
 
 body {
   margin: 0px;
+  /* display: flex;
+  min-height: 100vh;
+  flex-direction: column; */
 }
 
 header {
@@ -99,6 +100,23 @@ main {
   min-width: 320px;
   margin: 8px;
   min-height: 100vh;
+}
+
+footer {
+  background-color: #212121;
+}
+
+footer img:hover {
+  -webkit-filter: drop-shadow(0 0 1px white);
+  transition: 0.2s;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #9cb696;
 }
 
 h1 {
