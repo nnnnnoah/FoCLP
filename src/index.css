@@ -95,7 +95,6 @@ nav div {
 }
 
 main {
-  display: flex;
   place-items: center;
   min-width: 320px;
   margin: 8px;
@@ -173,4 +172,20 @@ main {
 .logo:hover {
   filter: drop-shadow(grey 0px 0px 0.3rem);
   transition: 0.3s;
+}
+
+hr {
+  height: auto;
+  border-top: 1px;
+  border-bottom-width: 1px;
+  width: 100%;
+}
+
+footer hr {
+  height: auto;
+  border-color: #303030;
+}
+
+#home-banner {
+  background-img: url("");
 }

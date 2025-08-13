@@ -3,61 +3,53 @@ import EmailIcon from "@/assets/icons/email.png";
 import TwitterIcon from "@/assets/icons/twitter.png";
 import FacebookIcon from "@/assets/icons/facebook.png";
 import PinterestIcon from "@/assets/icons/pinterest.png";
+import SocialIcon from "./ui/SocialIcon";
 
 function Footer() {
   return (
     <footer className="py-3">
-      <div className="px-4 flex flex-col items-center md:flex-row md:justify-between">
+      <div className="px-4 flex items-center gap-2 flex-col md:flex-row md:justify-between">
         {/* Left: Text */}
-        <div className="flex items-center">
+        <div className="flex flex-col items-center text-center gap-1 md:flex-row md:items-center md:text-left">
+          <span>Friends of Charleston Lake Park</span>
+          <span className="hidden md:inline mx-2">|</span>
           <span>
-            Friends of Charleston Lake Park | Website by{" "}
+            Website by{" "}
             <a
               href="https://www.linkedin.com/in/noah-miller-8556a7235"
               target="_blank"
               rel="noopener noreferrer"
+              className="underline"
             >
               Noah Miller
             </a>
           </span>
         </div>
 
+        <hr className="block md:hidden mb-5 mt-5" />
+
         {/* Right: Social Icons */}
         <div className="flex items-center gap-x-2 md:px-4">
-          <a
-            href="mailto:info@friendsofcharlestonlakepark.ca"
-            aria-label="Email"
-          >
-            <img src={EmailIcon} alt="Email icon" className="h-10 w-10" />
-          </a>
-          <a
-            href="https://twitter.com/CharlestonLkPP"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter/X"
-          >
-            <img src={TwitterIcon} alt="Twitter icon" className="h-10 w-10" />
-          </a>
-          <a
-            href="https://www.facebook.com/friendscharlestonlakepark"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <img src={FacebookIcon} alt="Facebook icon" className="h-10 w-10" />
-          </a>
-          <a
-            href="https://www.pinterest.ca/ontarioparks/charleston-lake/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Pinterest"
-          >
-            <img
-              src={PinterestIcon}
-              alt="Pinterest icon"
-              className="h-10 w-10"
-            />
-          </a>
+          <SocialIcon
+            img={EmailIcon}
+            link="mailto:info@friendsofcharlestonlakepark.ca"
+            alt="Email"
+          />
+          <SocialIcon
+            img={TwitterIcon}
+            link="https://x.com/CharlestonLkPP"
+            alt="Twitter/X"
+          />
+          <SocialIcon
+            img={FacebookIcon}
+            link="https://www.facebook.com/friendscharlestonlakepark"
+            alt="Facebook"
+          />
+          <SocialIcon
+            img={PinterestIcon}
+            link="https://www.pinterest.ca/ontarioparks/charleston-lake/"
+            alt="Pinterest"
+          />
         </div>
       </div>
     </footer>

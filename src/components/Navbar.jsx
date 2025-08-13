@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./ui/Dropdown";
+import Membership from "../pages/Membership";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
