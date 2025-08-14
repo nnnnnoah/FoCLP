@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <Router basename={"/"}>
+    <Router basename={"/FoCLP"}>
       <Header />
       <Navbar />
       <Routes>
