@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "/assets/images/logo.png";
 
 function Header() {
   return (
@@ -6,7 +7,7 @@ function Header() {
       <a href="/">
         <img
           className="logo"
-          src="/assets/images/logo.png"
+          src={logo}
           alt="Friends of Charleston Lake Park Logo"
         ></img>
       </a>
