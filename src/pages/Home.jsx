@@ -1,4 +1,9 @@
 import Banner from "../components/ui/Banner.jsx";
+import Image1 from "/assets/images/banner/banner1.png";
+import Image2 from "/assets/images/banner/banner2.png";
+import Image3 from "/assets/images/banner/banner3.png";
+import Image4 from "/assets/images/banner/banner4.png";
+import Image5 from "/assets/images/banner/banner5.png";
 
 function Home() {
   const resources = [
@@ -21,7 +26,8 @@ function Home() {
 
   return (
     <>
-      <Banner />
+      <Banner images={[Image1, Image2, Image3, Image4, Image5]} />
+
       <main className="container mx-auto px-4">
         <section className="text-left">
           <h2>Who We Are</h2>
