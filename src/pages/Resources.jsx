@@ -1,4 +1,4 @@
-export default function Membership() {
+export default function Resources() {
   return (
     <>
       <p>Placeholder</p>

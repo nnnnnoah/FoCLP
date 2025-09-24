@@ -1,4 +1,4 @@
-export default function Membership() {
+export default function Volunteer() {
   return (
     <>
       <p>Placeholder</p>

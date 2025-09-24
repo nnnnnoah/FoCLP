@@ -1,4 +1,4 @@
-export default function Membership() {
+export default function Facilities() {
   return (
     <>
       <p>Placeholder</p>
