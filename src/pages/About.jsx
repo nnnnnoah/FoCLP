@@ -2,27 +2,23 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="container mx-auto px-4 mb-10">
-      <div className="mt-8">
-        <div className="text-center">
-          <h1 id="page-header">About the Park</h1>
-        </div>
+    <div id="page-content">
+      <div className="text-center">
+        <h1>About the Park</h1>
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto">
         <div className="space-y-8">
           <section>
-            <h3 className="text-2xl font-semibold mb-6">
-              The Lake, the Land and the Eco-System
-            </h3>
+            <h3>The Lake, the Land and the Eco-System</h3>
 
             <img
-              src="/api/placeholder/600/400"
-              className="float-right ml-6 mb-4 border border-gray-300 rounded-lg shadow-md hidden sm:block w-80 h-60 object-cover"
+              src="public\assets\images\sandstone_overhang.jpg"
+              className="float-right ml-6 mb-4 img-border hidden sm:block w-120 h-80 object-cover"
               alt="The Overhang on Sandstone Trail"
             />
 
-            <div className="space-y-4 text-justify leading-relaxed">
+            <div className="space-y-4 leading-relaxed">
               <p>
                 Charleston Lake possesses a captivating feature: it is nestled
                 within two distinct types of bedrock, granite and sandstone.
@@ -36,8 +32,8 @@ export default function About() {
               </p>
 
               <img
-                src="/api/placeholder/400/300"
-                className="block sm:hidden mx-auto border border-gray-300 rounded-lg shadow-md w-full max-w-md h-48 object-cover mb-4"
+                src="public\assets\images\sandstone_overhang.jpg"
+                className="block sm:hidden mx-auto img-border w-full max-w-md h-48 object-cover mb-4"
                 alt="The Overhang on Sandstone Trail"
               />
 
@@ -100,14 +96,12 @@ export default function About() {
             </div>
           </section>
 
-          <hr className="border-gray-300 my-8" />
+          <hr className="my-8" />
 
           <section>
-            <h3 className="text-2xl font-semibold mb-6 mt-10">
-              The Ecological Setting
-            </h3>
+            <h3>The Ecological Setting</h3>
 
-            <div className="space-y-4 text-justify leading-relaxed">
+            <div className="space-y-4 leading-relaxed">
               <p>
                 In broad terms, the forest region is part of the Great Lakes -
                 St. Lawrence Lowlands Forest Region. However, a closer
@@ -262,12 +256,12 @@ export default function About() {
             </div>
           </section>
 
-          <hr className="border-gray-300 my-8" />
+          <hr className="my-8" />
 
           <section>
-            <h3 className="text-2xl font-semibold mb-6 mt-10">Flora & Fauna</h3>
+            <h3>Flora & Fauna</h3>
 
-            <div className="space-y-4 text-justify leading-relaxed">
+            <div className="space-y-4 leading-relaxed">
               <p>
                 Charleston Lake Provincial Park boasts a rich diversity of plant
                 and animal species. This diversity can be attributed to the
@@ -290,20 +284,18 @@ export default function About() {
             </div>
           </section>
 
-          <hr className="border-gray-300 my-8" />
+          <hr className="my-8" />
 
           <section>
-            <h3 className="text-2xl font-semibold mb-6 mt-10">
-              The Heart of the UNESCO Frontenac Arch Biosphere
-            </h3>
+            <h3>The Heart of the UNESCO Frontenac Arch Biosphere</h3>
 
-            <div className="space-y-4 text-justify leading-relaxed">
+            <div className="space-y-4 leading-relaxed">
               <p>
                 One of 15 Biosphere Reserves located in Canada, the Frontenac
                 Arch Biosphere was designated by{" "}
                 <a
                   href="/"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  className="content-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -317,8 +309,8 @@ export default function About() {
                 The{" "}
                 <a
                   href="https://frontenacarchbiosphere.ca/"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors"
                   target="_blank"
+                  className="content-link"
                   rel="noopener noreferrer"
                 >
                   Frontenac Arch Biosphere Reserve

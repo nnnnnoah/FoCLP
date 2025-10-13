@@ -12,7 +12,10 @@ function Footer() {
     <footer className="py-3">
       <div className="px-4 flex items-center gap-2 flex-col md:flex-row md:justify-between">
         {/* Left: Text */}
-        <div className="flex flex-col items-center text-center gap-1 md:flex-row md:items-center md:text-left">
+        <div
+          className="flex flex-col items-center text-center gap-1 md:flex-row md:items-center md:text-left"
+          id="footer-name-section"
+        >
           <span>Friends of Charleston Lake Park </span>
           <span className="hidden md:inline mx-2">|</span>
           <span>{currentYear}</span>

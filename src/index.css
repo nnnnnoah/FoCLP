@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial;
   line-height: 1.5;
   font-weight: 400;
 
@@ -30,6 +30,17 @@ header {
   display: flex;
   justify-content: center;
   background-position: center;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #3f6344;
+  margin-top: 30px;
+}
+
+h3 {
 }
 
 .nav-parent {
@@ -119,11 +130,6 @@ footer a:hover {
   color: #9cb696;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -163,13 +169,25 @@ main {
   text-align: center;
 }
 
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
 .logo {
-  height: 8em;
+  height: auto;
+  max-height: 8em;
+  width: auto;
+  max-width: 100%;
   will-change: filter;
   transition: filter 300ms;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: block;
 }
+
 .logo:hover {
   filter: drop-shadow(grey 0px 0px 0.3rem);
   transition: 0.3s;
@@ -180,6 +198,9 @@ hr {
   border-top: 1px;
   border-bottom-width: 1px;
   width: 100%;
+  border-color: var(--color-gray-300);
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 footer hr {
@@ -189,4 +210,73 @@ footer hr {
 
 #home-banner {
   background-img: url("");
+}
+
+#page-content {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 7em;
+}
+
+#page-content img {
+}
+
+.img-border {
+  border: 3px solid #ddd;
+}
+
+@media (max-width: 767px) {
+  #footer-name-section {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 640px) {
+  #page-content {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  #page-content {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  #page-content {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  #page-content {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  #page-content {
+    max-width: 1536px;
+  }
+}
+
+.content-link {
+  color: #427e4a;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.content-link:hover {
+  color: #4fba5d;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
