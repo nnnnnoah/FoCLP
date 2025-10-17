@@ -21,7 +21,7 @@ function Footer() {
           <span>{currentYear}</span>
         </div>
 
-        <hr className="block md:hidden mb-5 mt-5" />
+        <hr className="block md:hidden" />
 
         {/* Right: Social Icons */}
         <div className="flex items-center gap-x-2 md:px-4">
