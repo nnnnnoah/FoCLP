@@ -11,6 +11,7 @@ import Contributions from "./pages/Contributions";
 import Events from "./pages/Events";
 import Facilities from "./pages/Facilities";
 import Home from "./pages/Home";
+import Join from "./pages/Join";
 import Maps from "./pages/Maps";
 import Membership from "./pages/Membership";
 import Pavilion from "./pages/Pavilion";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contributions" element={<Contributions />} />
         <Route path="/events" element={<Events />} />
         <Route path="/facilities" element={<Facilities />} />
+        <Route path="/join" element={<Join />} />
         <Route path="/maps" element={<Maps />} />
         <Route path="/membership" element={<Membership />} />
         <Route path="/pavilion" element={<Pavilion />} />

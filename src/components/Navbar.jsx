@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./ui/Dropdown";
-import Membership from "../pages/Membership";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMenu = (menuName) => {
     setOpenMenu(openMenu === menuName ? null : menuName);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setOpenMenu(null);
   };
 
   return (
@@ -19,7 +24,7 @@ function Navbar() {
         openMenu={openMenu}
         toggleMenu={toggleMenu}
         items={[
-          { link: "/about", label: "About" },
+          { link: "/about", label: "About the Park" },
           { link: "/maps", label: "Maps" },
           { link: "/trails", label: "Trails" },
           { link: "/facilities", label: "Park Facilities" },
@@ -54,9 +59,10 @@ function Navbar() {
         openMenu={openMenu}
         toggleMenu={toggleMenu}
         items={[
-          { link: "/resources", label: "Resources" },
           { link: "/reports", label: "Board & Reports" },
           { link: "/contributions", label: "Contributions" },
+          { link: "/resources", label: "Resources" },
+          { link: "/join", label: "Get Involved" },
         ]}
       />
 

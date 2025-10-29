@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Facilities() {
@@ -18,10 +18,10 @@ export default function Facilities() {
     { image: "/assets/images/tour/tour8.jpg", caption: "Day Use Canoe Launch" },
     { image: "/assets/images/tour/tour9.jpg", caption: "Day Use Parking" },
     { image: "/assets/images/tour/tour10.jpg", caption: "Day Use Picnic Area" },
-    { image: "/assets/images/tour/tour11.jpg", caption: "Discover Centre" },
+    { image: "/assets/images/tour/tour11.jpg", caption: "Discovery Centre" },
     {
       image: "/assets/images/tour/tour12.jpg",
-      caption: "Discover Centre Interior",
+      caption: "Discovery Centre Interior",
     },
     { image: "/assets/images/tour/tour13.jpg", caption: "Dog Beach" },
     { image: "/assets/images/tour/tour14.jpg", caption: "Dog Beach" },
@@ -68,9 +68,14 @@ export default function Facilities() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
+  // Automatically flip through slideshow on mobile
+  useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    if (!isMobile) return;
+
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div id="page-content" className="container">
@@ -80,45 +85,35 @@ export default function Facilities() {
 
       <div className="mx-auto space-y-8">
         <section>
-          <div className="relative bg-gray-900 rounded-lg overflow-hidden">
-            <div className="relative h-96 md:h-[600px]">
+          <div className="relative overflow-hidden">
+            <div className="relative h-50 md:h-[600px]">
               <img
                 src={slides[currentSlide].image}
                 alt={slides[currentSlide].caption}
-                className="w-full h-full object-contain"
+                className="w-full h-full img-border"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white py-4 px-6">
+              {/* <div className="absolute bottom-0 left-0 right-0 bg-opacity-70 text-white py-4 px-6">
                 <h3 className="text-xl font-bold text-center">
                   {slides[currentSlide].caption}
                 </h3>
-              </div>
+              </div> */}
             </div>
 
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full transition-all"
-              aria-label="Previous slide"
+              className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full transition-all"
+              aria-label="Previous"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
 
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full transition-all"
-              aria-label="Next slide"
+              className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full transition-all"
+              aria-label="Next"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
-          </div>
-
-          <div className="text-center mt-6">
-            <p className="text-lg">
-              For the Tabloid Map of Campsites, click{" "}
-              <a href="#" className="content-link">
-                here
-              </a>
-              .
-            </p>
           </div>
         </section>
 

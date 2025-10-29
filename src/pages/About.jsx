@@ -276,15 +276,7 @@ export default function About() {
           <div className="space-y-4 leading-relaxed">
             <p>
               One of 15 Biosphere Reserves located in Canada, the Frontenac Arch
-              Biosphere was designated by{" "}
-              <a
-                href="/"
-                className="content-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                UNESCO's Man and the Biosphere Program
-              </a>{" "}
+              Biosphere was designated by UNESCO's Man and the Biosphere Program
               in November 2002. As of May 2009, there are 553 World Biosphere
               Reserves located in 107 countries.
             </p>

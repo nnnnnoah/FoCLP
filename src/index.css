@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&family=Open+Sans:wght@300;600&family=Lato:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;600;700&family=Lato:wght@300;600&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -6,9 +6,17 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+  background-color: #fff;
+  color: #333;
+  /* background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 99%,
+    rgba(118, 118, 118, 0.279) 100%
+  ); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,9 +26,6 @@
 
 body {
   margin: 0px;
-  /* display: flex;
-  min-height: 100vh;
-  flex-direction: column; */
 }
 
 header {
@@ -40,6 +45,13 @@ h1 {
   margin-top: 30px;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
 .nav-parent {
   color: #fff;
   transition: 0.2s;
@@ -48,6 +60,15 @@ h1 {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  letter-spacing: -1px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  top: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .dropdown:hover .nav-parent,
@@ -68,6 +89,7 @@ h1 {
   padding-bottom: 10px;
   margin-left: 25px;
   margin-top: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-menu a {
@@ -112,6 +134,7 @@ main {
 
 footer {
   background-color: #212121;
+  color: #fff;
 }
 
 footer img:hover {
@@ -134,16 +157,51 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #212121;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #3f6344;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+.green-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  background: linear-gradient(
+    0deg,
+    rgba(63, 99, 68, 1) 0%,
+    rgba(66, 126, 74, 1) 100%
+  );
+  transition: 0.3s;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px #aaa solid;
+  border-radius: 5px;
+}
+
+h2 {
+  font-weight: 600;
+  color: #3f6344;
+  font-size: 26px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.green-btn:hover {
+  color: #fff;
+  background: linear-gradient(0deg, rgb(77, 121, 83) 0%, rgb(77, 146, 86) 100%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -219,7 +277,7 @@ footer hr {
   padding-left: 1rem;
   box-sizing: border-box;
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 7em;
 }
 

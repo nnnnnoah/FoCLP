@@ -14,17 +14,17 @@ export default function Trails() {
     {
       name: "Quiddity",
       length: "2.4 km",
-      map: "images/trails/maps/quiddity.png",
+      map: "/assets/images/trails/maps/quiddity.png",
       theme: "Charleston's diverse habitats",
       features: "Boardwalk over wetland; scenic lookout",
       difficulty: "Easy",
-      image: "assets/images/trails/quiddity.jpg",
+      image: "/assets/images/trails/quiddity.jpg",
       alt: "Quiddity Trail",
     },
     {
       name: "Sandstone Island",
       length: "3.3 km",
-      map: "images/trails/maps/sandstone.png",
+      map: "/assets/images/trails/maps/sandstone.png",
       theme: "Geological and human history of the park",
       features:
         "Historic rock shelter; scenic lookout; interesting geological features",
@@ -35,7 +35,7 @@ export default function Trails() {
     {
       name: "Shoreline Centennial",
       length: "2.0 km",
-      map: "images/trails/maps/shoreline.png",
+      map: "/assets/images/trails/maps/shoreline.png",
       theme: "The story of Charleston Lake",
       features: "Scenic views of the rugged shoreline",
       difficulty: "Moderate",
@@ -45,7 +45,7 @@ export default function Trails() {
     {
       name: "Hemlock Ridge",
       length: "2.0 km",
-      map: "images/trails/maps/hemlock.png",
+      map: "/assets/images/trails/maps/hemlock.png",
       theme: "Plant communities of the park",
       features: "Views of a beaver pond; rock crevasses",
       difficulty: "Moderate",
@@ -69,7 +69,7 @@ export default function Trails() {
     {
       name: "Blue Mountain",
       length: "5.7 km",
-      map: "images/trails/maps/blue.png",
+      map: "/assets/images/trails/maps/blue.png",
       theme: "Wildlife of the park",
       features: "Scenic lookout (the highest point in Leeds County)",
       difficulty: "Difficult",
