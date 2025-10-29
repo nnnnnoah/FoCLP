@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 function Header() {
   return (
     <header className="">
-      <a href="/">
+      <a href={`${import.meta.env.BASE_URL}`}>
         <img
           className="logo"
           src={logo}

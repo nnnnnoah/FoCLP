@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ontarioNatureImg from "@/assets/images/ontario_nature.jpg";
 
 export default function Activities() {
   return (
@@ -65,7 +66,7 @@ export default function Activities() {
         <section className="md:text-center">
           <img
             className="w-full max-w-2xl mx-auto img-border mb-6"
-            src="/assets/images/ontario_nature.jpg"
+            src={ontarioNatureImg}
             alt="Ontario Nature Youth Summit"
           />
           <p className="italic leading-relaxed mx-auto">

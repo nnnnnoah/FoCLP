@@ -1,4 +1,6 @@
 import React from "react";
+import sandstoneImg from "@/assets/images/sandstone_overhang.jpg";
+
 export default function About() {
   return (
     <div id="page-content" className="container">
@@ -11,7 +13,7 @@ export default function About() {
           <h3 className="mb-4">The Lake, the Land and the Eco-System</h3>
 
           <img
-            src="public/assets/images/sandstone_overhang.jpg"
+            src={sandstoneImg}
             className="float-right ml-6 mb-4 img-border w-full sm:w-120 h-48 sm:h-80 object-cover max-w-md sm:max-w-none"
             alt="The Overhang on Sandstone Trail"
           />

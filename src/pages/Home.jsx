@@ -1,9 +1,9 @@
 import Banner from "../components/ui/Banner.jsx";
-import Image1 from "/assets/images/banner/banner1.png";
-import Image2 from "/assets/images/banner/banner2.png";
-import Image3 from "/assets/images/banner/banner3.png";
-import Image4 from "/assets/images/banner/banner4.png";
-import Image5 from "/assets/images/banner/banner5.png";
+import Image1 from "@/assets/images/banner/banner1.png";
+import Image2 from "@/assets/images/banner/banner2.png";
+import Image3 from "@/assets/images/banner/banner3.png";
+import Image4 from "@/assets/images/banner/banner4.png";
+import Image5 from "@/assets/images/banner/banner5.png";
 
 function Home() {
   const resources = [
