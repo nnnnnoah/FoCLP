@@ -1,5 +1,7 @@
 import React from "react";
 
+import canoe from "@/assets/images/raffle/h2ocanoe.jpeg";
+
 export default function Raffle() {
   return (
     <div id="page-content" className="container">
@@ -13,7 +15,7 @@ export default function Raffle() {
 
           <img
             className="w-full max-w-2xl mx-auto img-border rounded mb-6"
-            src="/assets/images/raffle/h2ocanoe.jpeg"
+            src={canoe}
             alt="16' H20 Canoe - First Prize"
           />
 

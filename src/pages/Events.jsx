@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import seniors1 from "@/assets/images/seniors/seniors1.jpg";
+import seniors2 from "@/assets/images/seniors/seniors2.jpg";
+import seniors3 from "@/assets/images/seniors/seniors3.jpg";
+
 export default function Events() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: "/assets/images/seniors/seniors1.jpg",
+      image: seniors1,
       caption: "A short hike on Quiddity Trail",
     },
     {
-      image: "/assets/images/seniors/seniors2.jpg",
+      image: seniors2,
       caption: "A short hike on Quiddity Trail",
     },
     {
-      image: "/assets/images/seniors/seniors3.jpg",
+      image: seniors3,
       caption: "Lunch",
     },
   ];

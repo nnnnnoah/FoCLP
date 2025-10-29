@@ -1,5 +1,7 @@
 import React from "react";
 
+import logo from "@/assets/images/old_logo.png";
+
 export default function Join() {
   return (
     <div id="page-content" className="container">
@@ -85,7 +87,7 @@ export default function Join() {
 
             <img
               className="mx-auto mt-8"
-              src="/assets/images/old_logo.png"
+              src={logo}
               alt="Friends of Charleston Lake Park Logo"
             />
           </div>

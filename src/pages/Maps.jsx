@@ -1,3 +1,6 @@
+import campsite from "@/assets/docs/2015_campsite.pdf";
+import trails from "@/assets/docs/2015_trails.pdf";
+
 export default function Maps() {
   return (
     <div id="page-content" className="container">
@@ -11,7 +14,7 @@ export default function Maps() {
             <p>
               We have single-page downloads of the{" "}
               <a
-                href="public/assets/docs/2015_campsite.pdf"
+                href={campsite}
                 target="_blank"
                 className="content-link"
                 rel="noopener noreferrer"
@@ -20,7 +23,7 @@ export default function Maps() {
               </a>{" "}
               as well as a{" "}
               <a
-                href="public/assets/docs/2015_trails.pdf"
+                href={trails}
                 target="_blank"
                 className="content-link"
                 rel="noopener noreferrer"

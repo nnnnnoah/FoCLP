@@ -1,5 +1,7 @@
 import React from "react";
 
+import island from "@/assets/images/2013_late_oct.jpg";
+
 export default function Resources() {
   const links = [
     {
@@ -53,7 +55,7 @@ export default function Resources() {
 
           <div>
             <img
-              src="/assets/images/2013_late_oct.jpg"
+              src={island}
               className="w-full h-auto img-border"
               alt="An island in late October"
             />

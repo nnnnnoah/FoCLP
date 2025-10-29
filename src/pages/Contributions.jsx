@@ -1,4 +1,6 @@
 import React from "react";
+import awardPlaque from "@/assets/images/plaque.png";
+import ontarioNatureDoc from "@/assets/docs/fclp_website_entry_ontario_nature_2019.pdf";
 
 export default function Contributions() {
   return (
@@ -68,7 +70,7 @@ export default function Contributions() {
 
             <img
               className="mx-auto img-border my-8"
-              src="/assets/images/plaque.png"
+              src={awardPlaque}
               alt="Ontario Parks Student Bursary Award Plaque"
             />
 
@@ -85,7 +87,7 @@ export default function Contributions() {
         <section className="text-center">
           <h3 className="text-xl">
             <a
-              href="/assets/docs/fclp_website_entry_ontario_nature_2019.odt"
+              href={ontarioNatureDoc}
               className="content-link"
               target="_blank"
               rel="noopener noreferrer"

@@ -1,4 +1,10 @@
 import React from "react";
+import agm2023 from "@/assets/docs/2023 AGM Minutes.pdf";
+import agm2022 from "@/assets/docs/2022 AGM Minutes.pdf";
+import agm2021 from "@/assets/docs/2021 AGM Minutes.pdf";
+import agm2020 from "@/assets/docs/2020 AGM Minutes.pdf";
+import agm2019 from "@/assets/docs/2019 AGM Minutes.pdf";
+import financialReport2024 from "@/assets/docs/2024 FoCLP Financial Report.pdf";
 
 export default function Reports() {
   const boardMembers = [
@@ -33,11 +39,11 @@ export default function Reports() {
 
   const agmYears = [
     { year: "2024", file: "" },
-    { year: "2023", file: "/assets/docs/2023 AGM Minutes.docx" },
-    { year: "2022", file: "/assets/docs/2022 AGM Minutes.docx" },
-    { year: "2021", file: "/assets/docs/2021 AGM Minutes.docx" },
-    { year: "2020", file: "/assets/docs/2020 AGM Minutes.docx" },
-    { year: "2019", file: "/assets/docs/2019 AGM Minutes.docx" },
+    { year: "2023", file: agm2023 },
+    { year: "2022", file: agm2022 },
+    { year: "2021", file: agm2021 },
+    { year: "2020", file: agm2020 },
+    { year: "2019", file: agm2019 },
     { year: "2017", file: "" },
     { year: "2016", file: "" },
     { year: "2015", file: "" },
@@ -104,7 +110,7 @@ export default function Reports() {
             <div className="mt-8">
               <h4 className="text-lg">
                 <a
-                  href="/assets/docs/2024 FoCLP Financial Report.pdf"
+                  href={financialReport2024}
                   className="content-link"
                   target="_blank"
                   rel="noopener noreferrer"

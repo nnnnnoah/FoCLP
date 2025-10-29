@@ -1,5 +1,7 @@
 import React from "react";
 
+import pavilion from "@/assets/images/pavilion/learning_scructure.jpg";
+
 export default function Pavilion() {
   const donationLevels = [
     { level: "Bronze", amount: "Up to $99" },
@@ -18,7 +20,7 @@ export default function Pavilion() {
       <div className="mx-auto space-y-8">
         <section>
           <img
-            src="/assets/images/pavilion/learning_scructure.jpg"
+            src={pavilion}
             alt="Learning Centre structure at Frontenac Provincial Park. The same design will be used for the pavilion at Charleston Lake Provincial Park"
             className="w-full max-w-4xl mx-auto img-border rounded mb-8"
           />

@@ -1,63 +1,92 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import tour1 from "@/assets/images/tour/tour1.jpg";
+import tour2 from "@/assets/images/tour/tour2.jpg";
+import tour3 from "@/assets/images/tour/tour3.jpg";
+import tour4 from "@/assets/images/tour/tour4.jpg";
+import tour5 from "@/assets/images/tour/tour5.jpg";
+import tour6 from "@/assets/images/tour/tour6.jpg";
+import tour7 from "@/assets/images/tour/tour7.jpg";
+import tour8 from "@/assets/images/tour/tour8.jpg";
+import tour9 from "@/assets/images/tour/tour9.jpg";
+import tour10 from "@/assets/images/tour/tour10.jpg";
+import tour11 from "@/assets/images/tour/tour11.jpg";
+import tour12 from "@/assets/images/tour/tour12.jpg";
+import tour13 from "@/assets/images/tour/tour13.jpg";
+import tour14 from "@/assets/images/tour/tour14.jpg";
+import tour15 from "@/assets/images/tour/tour15.jpg";
+import tour16 from "@/assets/images/tour/tour16.jpg";
+import tour17 from "@/assets/images/tour/tour17.jpg";
+import tour18 from "@/assets/images/tour/tour18.jpg";
+import tour19 from "@/assets/images/tour/tour19.jpg";
+import tour20 from "@/assets/images/tour/tour20.jpg";
+import tour21 from "@/assets/images/tour/tour21.jpg";
+import tour22 from "@/assets/images/tour/tour22.jpg";
+import tour23 from "@/assets/images/tour/tour23.jpg";
+import tour24 from "@/assets/images/tour/tour24.jpg";
+import tour25 from "@/assets/images/tour/tour25.jpg";
+import tour26 from "@/assets/images/tour/tour26.jpg";
+import tour27 from "@/assets/images/tour/tour27.jpg";
+import tour28 from "@/assets/images/tour/tour28.jpg";
+import tour29 from "@/assets/images/tour/tour29.jpg";
+
 export default function Facilities() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const slides = [
     {
-      image: "/assets/images/tour/tour1.jpg",
+      image: tour1,
       caption: "Bayside Comfort Station",
     },
-    { image: "/assets/images/tour/tour2.jpg", caption: "Boat Launch" },
-    { image: "/assets/images/tour/tour3.jpg", caption: "Boat Launch at Dusk" },
-    { image: "/assets/images/tour/tour4.jpg", caption: "Buckhorn Point" },
-    { image: "/assets/images/tour/tour5.jpg", caption: "Canoe Launch" },
-    { image: "/assets/images/tour/tour6.jpg", caption: "Park Entrance" },
-    { image: "/assets/images/tour/tour7.jpg", caption: "Day Use Beach" },
-    { image: "/assets/images/tour/tour8.jpg", caption: "Day Use Canoe Launch" },
-    { image: "/assets/images/tour/tour9.jpg", caption: "Day Use Parking" },
-    { image: "/assets/images/tour/tour10.jpg", caption: "Day Use Picnic Area" },
-    { image: "/assets/images/tour/tour11.jpg", caption: "Discovery Centre" },
+    { image: tour2, caption: "Boat Launch" },
+    { image: tour3, caption: "Boat Launch at Dusk" },
+    { image: tour4, caption: "Buckhorn Point" },
+    { image: tour5, caption: "Canoe Launch" },
+    { image: tour6, caption: "Park Entrance" },
+    { image: tour7, caption: "Day Use Beach" },
+    { image: tour8, caption: "Day Use Canoe Launch" },
+    { image: tour9, caption: "Day Use Parking" },
+    { image: tour10, caption: "Day Use Picnic Area" },
+    { image: tour11, caption: "Discovery Centre" },
     {
-      image: "/assets/images/tour/tour12.jpg",
+      image: tour12,
       caption: "Discovery Centre Interior",
     },
-    { image: "/assets/images/tour/tour13.jpg", caption: "Dog Beach" },
-    { image: "/assets/images/tour/tour14.jpg", caption: "Dog Beach" },
-    { image: "/assets/images/tour/tour15.jpg", caption: "Gatehouse" },
-    { image: "/assets/images/tour/tour16.jpg", caption: "Group Camping Area" },
-    { image: "/assets/images/tour/tour17.jpg", caption: "Group Camping Area" },
-    { image: "/assets/images/tour/tour18.jpg", caption: "Group Camping Area" },
-    { image: "/assets/images/tour/tour19.jpg", caption: "Group Camping Area" },
-    { image: "/assets/images/tour/tour20.jpg", caption: "Main Office" },
+    { image: tour13, caption: "Dog Beach" },
+    { image: tour14, caption: "Dog Beach" },
+    { image: tour15, caption: "Gatehouse" },
+    { image: tour16, caption: "Group Camping Area" },
+    { image: tour17, caption: "Group Camping Area" },
+    { image: tour18, caption: "Group Camping Area" },
+    { image: tour19, caption: "Group Camping Area" },
+    { image: tour20, caption: "Main Office" },
     {
-      image: "/assets/images/tour/tour21.jpg",
+      image: tour21,
       caption: "Meadowlands Small Comfort Station",
     },
     {
-      image: "/assets/images/tour/tour22.jpg",
+      image: tour22,
       caption: "Quiddity Trail Lookout",
     },
     {
-      image: "/assets/images/tour/tour23.jpg",
+      image: tour23,
       caption: "Quiddity Trail Final Lookout",
     },
     {
-      image: "/assets/images/tour/tour24.jpg",
+      image: tour24,
       caption: "Quiddity Trail First Lookout",
     },
-    { image: "/assets/images/tour/tour25.jpg", caption: "Second Boardwalk" },
-    { image: "/assets/images/tour/tour26.jpg", caption: "Shadyridge Beach" },
+    { image: tour25, caption: "Second Boardwalk" },
+    { image: tour26, caption: "Shadyridge Beach" },
     {
-      image: "/assets/images/tour/tour27.jpg",
+      image: tour27,
       caption: "Shadyridge Comfort Station",
     },
     {
-      image: "/assets/images/tour/tour28.jpg",
+      image: tour28,
       caption: "Shoreline Picnic Area",
     },
-    { image: "/assets/images/tour/tour29.jpg", caption: "Shoreline Trailhead" },
+    { image: tour29, caption: "Shoreline Trailhead" },
   ];
 
   const nextSlide = () => {

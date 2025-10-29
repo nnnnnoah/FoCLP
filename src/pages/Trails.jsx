@@ -1,4 +1,17 @@
 import React from "react";
+import beechImage from "@/assets/images/trails/beech.jpg";
+import quiddityImage from "@/assets/images/trails/quiddity.jpg";
+import quiddityMap from "@/assets/images/trails/maps/quiddity.png";
+import sandstoneImage from "@/assets/images/trails/sandstone.jpg";
+import sandstoneMap from "@/assets/images/trails/maps/sandstone.png";
+import shorelineImage from "@/assets/images/trails/shoreline.jpg";
+import shorelineMap from "@/assets/images/trails/maps/shoreline.png";
+import hemlockImage from "@/assets/images/trails/hemlock.jpg";
+import hemlockMap from "@/assets/images/trails/maps/hemlock.png";
+import tallowImage from "@/assets/images/trails/tallow.jpg";
+import blueImage from "@/assets/images/trails/blue.jpg";
+import blueMap from "@/assets/images/trails/maps/blue.png";
+
 export default function Trails() {
   const trails = [
     {
@@ -8,48 +21,48 @@ export default function Trails() {
       theme: "Wildlife of the park",
       features: "Mature forest; diverse habitats",
       difficulty: "Easy",
-      image: "assets/images/trails/beech.jpg",
+      image: beechImage,
       alt: "Beech Woods Trail",
     },
     {
       name: "Quiddity",
       length: "2.4 km",
-      map: "/assets/images/trails/maps/quiddity.png",
+      map: quiddityMap,
       theme: "Charleston's diverse habitats",
       features: "Boardwalk over wetland; scenic lookout",
       difficulty: "Easy",
-      image: "/assets/images/trails/quiddity.jpg",
+      image: quiddityImage,
       alt: "Quiddity Trail",
     },
     {
       name: "Sandstone Island",
       length: "3.3 km",
-      map: "/assets/images/trails/maps/sandstone.png",
+      map: sandstoneMap,
       theme: "Geological and human history of the park",
       features:
         "Historic rock shelter; scenic lookout; interesting geological features",
       difficulty: "Moderate",
-      image: "assets/images/trails/sandstone.jpg",
+      image: sandstoneImage,
       alt: "Sandstone Island Trail",
     },
     {
       name: "Shoreline Centennial",
       length: "2.0 km",
-      map: "/assets/images/trails/maps/shoreline.png",
+      map: shorelineMap,
       theme: "The story of Charleston Lake",
       features: "Scenic views of the rugged shoreline",
       difficulty: "Moderate",
-      image: "assets/images/trails/shoreline.jpg",
+      image: shorelineImage,
       alt: "Shoreline Centennial Trail",
     },
     {
       name: "Hemlock Ridge",
       length: "2.0 km",
-      map: "/assets/images/trails/maps/hemlock.png",
+      map: hemlockMap,
       theme: "Plant communities of the park",
       features: "Views of a beaver pond; rock crevasses",
       difficulty: "Moderate",
-      image: "assets/images/trails/hemlock.jpg",
+      image: hemlockImage,
       alt: "Hemlock Ridge Trail",
     },
     {
@@ -63,18 +76,18 @@ export default function Trails() {
       features:
         "Scenic lookouts; more remote areas of the park; floating bridge",
       difficulty: "Difficult",
-      image: "assets/images/trails/tallow.jpg",
+      image: tallowImage,
       alt: "Tallow Rock Bay Trail",
     },
     {
       name: "Blue Mountain",
       length: "5.7 km",
-      map: "/assets/images/trails/maps/blue.png",
+      map: blueMap,
       theme: "Wildlife of the park",
       features: "Scenic lookout (the highest point in Leeds County)",
       difficulty: "Difficult",
       note: "Accessible by water from the Huckleberry Hollow picnic site.",
-      image: "assets/images/trails/blue.jpg",
+      image: blueImage,
       alt: "Blue Mountain Trail",
     },
   ];
