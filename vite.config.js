@@ -11,5 +11,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === "production" ? "/FoCLP/" : "/", // Production vs dev routing
+  base: mode === "production" ? "/" : "/", // Production vs dev routing - update the true clause for repo deployment
 }));
