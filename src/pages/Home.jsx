@@ -28,24 +28,6 @@ function Home() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const resources = [
-    { text: "View Our Pamphlet", href: "#" },
-    { text: "View Our Strategic Plan", href: "#" },
-  ];
-
-  const raffleWinners = [
-    {
-      place: "1st Prize",
-      name: "Steve Hayward",
-      location: "Powell, Ohio",
-    },
-    {
-      place: "2nd Prize - 2024 Ontario Parks Pass",
-      name: "Nino Delos Reyes",
-      location: "Kingston, ON",
-    },
-  ];
-
   return (
     <>
       <Banner
@@ -148,7 +130,7 @@ function Home() {
 
             <img
               src={winners}
-              className="w-full max-w-2xl mx-auto img-border rounded mb-6"
+              className="w-full max-w-2xl mx-auto img-border mb-6"
               alt="2025 Canoe Raffle Winners"
             />
 
@@ -164,7 +146,7 @@ function Home() {
             <h3 className="mb-6">Begin exploring the park now!</h3>
             <a href="/trails">
               <img
-                className="w-full max-w-2xl mx-auto img-border rounded hover:opacity-90 transition-opacity"
+                className="w-full max-w-2xl mx-auto img-border hover:opacity-90 transition-opacity"
                 src={cta}
                 alt="Explore the trails at Charleston Lake Park"
               />

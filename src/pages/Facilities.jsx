@@ -121,11 +121,6 @@ export default function Facilities() {
                 alt={slides[currentSlide].caption}
                 className="w-full h-full img-border"
               />
-              {/* <div className="absolute bottom-0 left-0 right-0 bg-opacity-70 text-white py-4 px-6">
-                <h3 className="text-xl font-bold text-center">
-                  {slides[currentSlide].caption}
-                </h3>
-              </div> */}
             </div>
 
             <button

@@ -93,7 +93,7 @@ export default function Reports() {
               <li>Receipt of the Minutes of the 2023 AGM</li>
               <li>
                 Approval of the 2024 Financial Report (followed by a resolution
-                "to waive an independent audit or financial review'" [This is a
+                "to waive an independent audit or financial review" [This is a
                 requirement of the Ontario Non-Profit Corporations Act])
               </li>
               <li>

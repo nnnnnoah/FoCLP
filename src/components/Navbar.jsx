@@ -66,7 +66,7 @@ function Navbar() {
     },
   ];
 
-  // Sticky navbar functionality for desktop
+  // Sticky navbar for desktop
   useEffect(() => {
     if (navRef.current) {
       setNavOffset(navRef.current.offsetTop);
@@ -91,7 +91,7 @@ function Navbar() {
     };
   }, [navOffset]);
 
-  // Position the mobile menu directly below the hamburger button
+  // Dynamic mobile menu positioning
   useEffect(() => {
     if (mobileMenuOpen && hamburgerRef.current && mobileMenuRef.current) {
       const updatePosition = () => {
@@ -101,7 +101,6 @@ function Navbar() {
 
       updatePosition();
 
-      // Update on scroll in case navbar is sticky
       window.addEventListener("scroll", updatePosition);
 
       return () => window.removeEventListener("scroll", updatePosition);

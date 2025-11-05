@@ -31,10 +31,6 @@ export default function Events() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
   // Automatically flip through slideshow on mobile
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 767px)").matches;
@@ -68,11 +64,6 @@ export default function Events() {
                 alt={slides[currentSlide].caption}
                 className="w-full h-full img-border"
               />
-              {/* <div className="absolute bottom-0 left-0 right-0 bg-opacity-70 text-white py-4 px-6">
-                <h3 className="text-xl font-bold text-center">
-                  {slides[currentSlide].caption}
-                </h3>
-              </div> */}
             </div>
 
             <button

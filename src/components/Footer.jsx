@@ -6,8 +6,6 @@ import PinterestIcon from "@/assets/icons/pinterest.png";
 import SocialIcon from "./ui/SocialIcon";
 
 function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer>
       <div className="px-4 flex items-center gap-2 flex-col md:flex-row md:justify-between">
@@ -16,7 +14,7 @@ function Footer() {
           className="flex flex-col items-center text-center gap-1 md:flex-row md:items-center md:text-left"
           id="footer-name-section"
         >
-          <span>Friends of Charleston Lake Park </span>
+          <span>Friends of Charleston Lake Park</span>
         </div>
 
         <hr className="block md:hidden" />

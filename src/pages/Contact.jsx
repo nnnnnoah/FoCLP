@@ -62,7 +62,7 @@ export default function Contact() {
 
         <section className="max-w-3xl mx-auto">
           <form
-            action="https://formsubmit.co/noahmiller@hotmail.ca"
+            action="https://formsubmit.co/info@friendsofcharlestonlakepark.ca"
             method="POST"
             className="space-y-6"
           >
