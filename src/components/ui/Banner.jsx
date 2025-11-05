@@ -15,23 +15,17 @@ const Banner = ({ images }) => {
       {images.map((img, i) => (
         <div
           key={i}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out bg-cover bg-center ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
           style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+            backgroundImage: `linear-gradient(to bottom, rgba(33, 39, 31, 0.387), rgba(38, 51, 38, 0.302)), url(${img})`,
           }}
+          id="banner-bg"
         />
       ))}
-
-      {/* Text overlay */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white text-3xl md:text-4xl font-bold drop-shadow-lg">
-          Welcome to Charleston Lake Park!
-        </h1>
+      <div className="absolute inset-0 flex items-center justify-center text-center">
+        <h1 id="banner-header">Welcome to Charleston Lake Park!</h1>
       </div>
     </div>
   );
