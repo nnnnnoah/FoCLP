@@ -14,7 +14,7 @@ export default function Raffle() {
           <h3 className="mb-6">Win a 16' H20 Canoe</h3>
 
           <img
-            className="w-full max-w-2xl mx-auto img-border rounded mb-6"
+            className="w-full max-w-2xl mx-auto img-border mb-6"
             src={canoe}
             alt="16' H20 Canoe - First Prize"
           />

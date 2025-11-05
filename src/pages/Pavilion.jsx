@@ -22,7 +22,7 @@ export default function Pavilion() {
           <img
             src={pavilion}
             alt="Learning Centre structure at Frontenac Provincial Park. The same design will be used for the pavilion at Charleston Lake Provincial Park"
-            className="w-full max-w-4xl mx-auto img-border rounded mb-8"
+            className="w-full max-w-4xl mx-auto img-border mb-8"
           />
 
           <div className="space-y-4 leading-relaxed">

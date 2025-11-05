@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Banner from "../components/ui/Banner.jsx";
 import Image1 from "@/assets/images/banner/banner1.png";
 import Image2 from "@/assets/images/banner/banner2.png";
@@ -12,6 +13,8 @@ import mobileImage4 from "@/assets/images/banner/mobile/banner4.png";
 import mobileImage5 from "@/assets/images/banner/mobile/banner5.png";
 import winners from "@/assets/images/raffle/2025winners.png";
 import cta from "@/assets/images/home_cta.jpg";
+import pamphlet from "@/assets/images/pamphlet.png";
+import plan from "@/assets/docs/Strategic Plan 2024.pdf";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -69,10 +72,10 @@ function Home() {
 
             <div className="text-center mt-12">
               <h4 className="text-xl">
-                <a href="/pavilion" className="content-link">
+                <Link to="/pavilion" className="content-link">
                   Help Us Build a Pavilion at Charleston Lake—Every Donation
                   Makes a Difference!
-                </a>
+                </Link>
               </h4>
             </div>
           </section>
@@ -84,7 +87,7 @@ function Home() {
             <div className="space-y-4">
               <h4 className="text-xl">
                 <a
-                  href="/images/Pamphlet.png"
+                  href={pamphlet}
                   target="_blank"
                   className="content-link"
                   rel="noopener noreferrer"
@@ -94,7 +97,7 @@ function Home() {
               </h4>
               <h4 className="text-xl">
                 <a
-                  href="/docs/Strategic Plan 2024.pdf"
+                  href={plan}
                   target="_blank"
                   className="content-link"
                   rel="noopener noreferrer"
