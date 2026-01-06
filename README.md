@@ -1,12 +1,60 @@
-# React + Vite
+# Friends of Charleston Lake Park Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2025 React rewrite for the Friends of Charleston Lake Park.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- React Router
+- Tailwind CSS
+- Lucide React (icons)
+- FormSubmit (form handling)
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run deploy
+```
+
+## Forms
+
+Forms submit via FormSubmit.co:
+
+- Contact/Volunteer: info@friendsofcharlestonlakepark.ca
+- Membership: foclptreasurer@1000island.net
+
+To update an address, edit the `action` attribute in the form components and changed the queried endpoint. New email addresses require a test submission for validation.
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable components (Navbar, Footer, etc.)
+├── pages/          # Page components
+├── App.jsx         # Root
+└── index.css       # Styling overrides
+```
+
+## Development Resources
+
+- Commit Standards: https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
+- GTM Integration
+
+## Credits
+
+- Development: Noah Miller (noahmiller@hotmail.ca)
+- Organization: Friends of Charleston Lake Park
